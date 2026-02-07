@@ -1,0 +1,146 @@
+@font-face {
+    font-family: one;
+    src: url(./1ZFS7N918ojhhd0nQWdj3jz4w.woff2);
+}
+@font-face {
+    font-family: two;
+    src: url(./fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2);
+}
+@font-face {
+    font-family: three;
+    src: url(./W7JHARPQSG6P4YAUJKIMUM6JNAX2RFW3.woff2);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* margin-bottom: 50px; */
+}
+section {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 60px 250px;
+
+    grid-template-areas: "topleft topleft topright"
+                         "bottomleft1 bottomleft2 topright"
+    ;
+}
+.card {
+    border-radius: 50px;
+}
+#card1 {
+    background-color: #2A27C9;
+    grid-area: topleft;
+    padding: 40px 50px;
+    color: #ffffff;
+}
+#card1 h1 {
+    width: 80%;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: two;
+}
+#card1 h1 span {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: pink;
+}
+#card1 h1 span img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#card1 p {
+    text-transform: capitalize;
+    font-family: three;
+    opacity: .7;
+    padding: 20px 0;
+    font-weight: 100;
+}
+#card1 button {
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #e2e2e247;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: two;
+    transition: all ease 1s;
+    font-weight: 600;
+}
+#card1 button i {
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+}
+#card1 button:hover {
+    background-color: #ffffff;
+    color: #2A27C9;
+}
+#card1 button:hover i {
+    background-color: #2A27C9;
+    padding: 10px;
+}
+#card2 {
+    background-color: #0C0021;
+    grid-area: topright;
+    overflow: hidden;
+}
+#card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#card3 {
+    background-color: goldenrod;
+    grid-area: bottomleft1;
+    overflow: hidden;
+}
+#card3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#card4 {
+    background-color: #ED3780;
+    grid-area: bottomleft2;
+    padding: 30px;
+}
+#card4 h1 {
+    width: 80%;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: two;   
+}
+#card4 p {
+    font-size: 16px;
+    font-family: three;
+    color: #ffffff;
+    opacity: .7;
+}
+
