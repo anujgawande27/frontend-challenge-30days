@@ -145,4 +145,20 @@ main {
     .section1 p {
         width: 90%;
     }
+    .box1 {
+        position: sticky;
+        top: 20px;
+    }
+    .box2 {
+        position: sticky;
+        top: 70px;
+    }
+    .box3 {
+        position: sticky;
+        top: 120px;
+    }
+    .box4 {
+        position: sticky;
+        top: 170px;
+    }
 }
