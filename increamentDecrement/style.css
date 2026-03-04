@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url(../../MyProjects/Pintrest-layout/Pictures/2024\ by\ Michael\ Rueger.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box {
+    width: 300px;
+    height: 350px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 2px solid #a46c3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#box h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    color: rgb(26, 29, 40);
+}
+#btns {
+    text-align: center;
+}
+#box button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(to left, #d39a6c, rgb(71, 193, 185));
+    cursor: pointer;
+    margin: 10px 5px;
+}
