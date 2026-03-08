@@ -72,6 +72,30 @@ main {
     ;
     padding: 2rem 15rem;
 }
+
+.colordiv {
+    width: 30%;
+    height: 30%;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.color1 {
+    background-color: rgb(255, 245, 135);
+    top: 70%;
+    left: 20%;
+}
+.color2 {
+    background-color: rgba(0, 247, 255, 0.551);
+    top: 70%;
+    left: 40%;
+}
+.color3 {
+    background-color: rgba(179, 0, 255, 0.582);
+    top: 70%;
+    left: 60%;
+}
 .box {
     border-radius: 3rem;
     /* border: 2px solid red; */
@@ -151,9 +175,80 @@ main {
     grid-area: threethree;
 }
 
+.section3 {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    /* background-color: #000000; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10rem 20rem;
+}
+.card{
+    width: min(350px, 100%);
+    height:250px;
+    background:linear-gradient(135deg,#000,#8a631a);
+    border-radius:30px;
+    border-bottom-right-radius: 90%;
+    padding:30px;
+    color:white;
+    text-decoration: none;
+    position:relative;
+    z-index: 1;
+}
+
+.arrow{
+    position:absolute;
+    width:80px;
+    height:80px;
+    background:#3e0437;
+    border-radius:50%;
+    right:0px;
+    bottom: 0px;
+    box-shadow: 2px 2px 20px 5px #79fceaae;
+}
+.card .arrow h1 {
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'two';
+    font-weight: 500;
+}
+.card h3 {
+    font-size: 3rem;
+    font-family: 'one';
+}
+.card p {
+    font-size: 1.5rem;
+    font-family: 'one';
+    opacity: 0.7;
+    text-transform: capitalize;
+}
+.card1 {
+    background:linear-gradient(135deg,#000,#44775c)
+}
+.card2 {
+    background:linear-gradient(135deg,#000,#775a44)
+}
+.card3 {
+    background:linear-gradient(135deg,#000,#774459)
+}
+.card4 {
+    background:linear-gradient(135deg,#000,#446f77)
+}
+.card5 {
+    background:linear-gradient(135deg,#000,#774459)
+}
+.card6 {
+    background:linear-gradient(135deg,#000,#446f77)
+}
 @media (max-width: 600px) {
     .section2 {
-        grid-template-rows: auto auto 1fr 1fr;
+        /* grid-template-rows: auto auto 1fr 1fr; */
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 2rem 2rem;
@@ -176,29 +271,67 @@ main {
     .box1 {
         position: sticky;
         top: 20px;
+        grid-area: topone;
     }
     .box2 {
         position: sticky;
         top: 50px;
+        grid-area: toptwo;
     }
     .box3 {
         position: sticky;
         top: 80px;
+        grid-area: botone;
     }
     .box4 {
         position: sticky;
         top: 110px;
+        grid-area: bottwo;
     }
     .box5 {
         position: sticky;
         top: 140px;
+        grid-area: threeone;
     }
     .box6 {
         position: sticky;
         top: 170px;
+        grid-area: threetwo;
     }
     .box7 {
         position: sticky;
+        top: 210px;
+        grid-area: threethree;
+    }
+    .section3 {
+        padding: 10px 20px;
+        background-image: linear-gradient(to top,#181818 0%, #4c3d37 20%,#02a186ed 50%, #a13a02ed 100%);
+    }
+    .card {
+        width: 350px;
+    }
+    .card1 {
+        position: sticky;
         top: 20px;
+    }
+    .card2 {
+        position: sticky;
+        top: 80px;
+    }
+    .card3 {
+        position: sticky;
+        top: 140px;
+    }
+    .card4 {
+        position: sticky;
+        top: 200px;
+    }
+    .card5 {
+        position: sticky;
+        top: 260px;
+    }
+    .card6 {
+        position: sticky;
+        top: 320px;
     }
 }
